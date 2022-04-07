@@ -21,10 +21,11 @@ p{
     -webkit-background-clip: text;
     -webkit-text-fill-center: rgb(255, 255, 255, 0);
 }
+.float2,
 .float {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     bottom: 40px;
     right: 40px;
     background-color: #fff;
@@ -32,11 +33,92 @@ p{
     border-radius: 50px;
     text-align: center;
 }
-
+a .my-float,
 a .my-float {
     text-align: center;
-    font-size: 30px;
-    margin-top: 15px;
+    font-size: 20px;
+    margin-top: 11px;
     color: #221f1f;
+}
+.float2{
+    bottom: 90px;
+    right: 40px;
+}
+.float2:hover,
+.float:hover{
+    background-color: #221f1f;
+    transition: 300ms;
+}
+a .my-float:hover,
+a .my-float:hover {
+    color: #58cced;
+    transition: 300ms;
+}
 
+/* popup */
+/* Popup container - can be anything you want */
+.popup {
+    position: fixed;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    bottom: 180px;
+    right: 20px;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #58cced ;
+    color: #fff;
+    text-align: center;
+    border-radius: 16px;
+    padding: 8px 0;
+    position: fixed;
+    z-index: 1;
+    margin-left: -180px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 85%;
+    margin-left: -4px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #58cced transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
