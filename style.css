@@ -122,3 +122,68 @@ a .my-float:hover {
         opacity: 1;
     }
 }
+.letter{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+}
+.outerbox{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: #fff;
+    width: 80%;
+    border-radius: 16px;
+    height: 200px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    text-align: center;
+}
+.box input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    border: none;
+    background-color: rgb(238, 238, 238);
+    padding-block: 5px;
+    border-radius: 16px;
+}
+.but{
+    border: none;
+    background-color: #58cced;
+    padding-inline: 1em;
+    margin-top: 1em;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+span{
+    color: rgb(255, 102, 102);
+}
+@media only screen and (min-width: 425px) {
+    .box {
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .box {
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .box {
+        width: 20%;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .box {
+        width: 20%;
+    }
+}
