@@ -19,7 +19,7 @@ function playPause() {
 function verifyDate(){
     var date = document.getElementById("date").value;
     var val = document.getElementById("error");
-    if(date === "04-17-2022"){
+    if(date === "04-09-2020"){
         window.location.href = "./annivpage.html";
     }else{
         val.innerHTML ="Wrong Date";
