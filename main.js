@@ -29,6 +29,7 @@ function verifyDate() {
 		val.innerHTML = "Wrong Date";
 	}
 }
+
 //for the next page
 function myFunction1() {
 	var popup = document.getElementById("myPopup1");
